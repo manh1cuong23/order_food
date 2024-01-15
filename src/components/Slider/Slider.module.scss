@@ -1,0 +1,323 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.wrapper:hover {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+.slide-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: -10%;
+}
+
+.slider-left {
+    position: absolute;
+    top: -175px;
+}
+
+.left-content {
+    span {
+        color: #e7ab3c;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 28px;
+        display: inline-block;
+    }
+}
+
+.title {
+    color: #252525;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.content {
+    margin-bottom: 42px;
+    position: relative;
+    top: 80px;
+    width: 50%;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 30px;
+    color: #ffffff;
+    background: #e7ab3c;
+    text-transform: uppercase;
+    position: absolute;
+    top: 180%;
+    cursor: pointer;
+}
+
+.slider-right {
+}
+
+.circle-sale {
+    position: absolute;
+    height: 154px;
+    width: 154px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140px;
+    padding-top: 8px;
+    border-radius: 50%;
+    text-align: center;
+    top: -225px;
+    left: 54%;
+    color: white;
+    background: #e7ab3c;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    animation: slider 1s linear;
+    z-index: 1;
+    opacity: 1;
+    &::after {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        border: 2px dashed #ffffff;
+        content: '';
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@keyframes slider {
+    from {
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    80% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 951px) {
+    .slider {
+        left: 3%;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .circle-sale {
+        left: 40%;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 751px) {
+    .slider {
+        left: 3%;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .content {
+        margin-bottom: 20px;
+        width: 35%;
+        height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .circle-sale {
+        left: 35%;
+        top: -170px;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 695px) {
+    .slider {
+        left: 10%;
+    }
+
+    .slider-left {
+        top: -150px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .content {
+        margin-bottom: 20px;
+        width: 35%;
+        height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .circle-sale {
+        left: 35%;
+        top: -140px;
+        width: 125px;
+        height: 125px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .slider {
+        left: 10%;
+    }
+
+    .slider-left {
+        top: -100px;
+    }
+
+    .title {
+        font-size: 26px;
+        top: 38px;
+    }
+
+    .content {
+        top: 40px;
+        margin-bottom: 20px;
+        width: 35%;
+        height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn {
+        top: 122%;
+    }
+
+    .circle-sale {
+        left: 185%;
+        top: -105px;
+        width: 75px;
+        height: 75px;
+        font-size: 8px;
+        line-height: 25px;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            font-size: 8px;
+            left: 0;
+            right: 0;
+            top: 36%;
+        }
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    .slider {
+        left: -28%;
+    }
+
+    .slider-left {
+        top: -90px;
+    }
+
+    .title {
+        font-size: 26px;
+        top: 38px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .btn {
+        top: 300%;
+        left: 3%;
+        padding: 6px;
+        text-align: center;
+        width: 100px;
+        margin-top: 15%;    
+    }
+
+    .circle-sale {
+        left: 120%;
+        top: -105px;
+        width: 75px;
+        height: 75px;
+        font-size: 8px;
+        line-height: 25px;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            font-size: 8px;
+            left: 0;
+            right: 0;
+            top: 36%;
+        }
+    }
+}

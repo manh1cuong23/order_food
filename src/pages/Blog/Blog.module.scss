@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 var(--margin-responsive);
+}
+
+.contents {
+    display: flex;
+    margin-top: 4%;
+}
+
+.filter {
+    // width: 64%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contents {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}

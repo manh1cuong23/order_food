@@ -1,0 +1,35 @@
+.result {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #bfbfbf;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.product-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.search-result {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.product {
+    margin-left: 4%;
+
+    p {
+        font-size: 18px;
+        color: #ffa600;
+    }
+}
+
+.product-title {
+    font-size: 20px;
+}

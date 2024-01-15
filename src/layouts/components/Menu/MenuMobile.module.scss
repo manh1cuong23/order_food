@@ -1,0 +1,107 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    // height: 54px;
+}
+
+.mobile-menu-wrap {
+    width: 100%;
+}
+
+.slick-menu {
+    font-size: 16px;
+    background: #4c4c4c;
+    padding: 5px;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    float: right;
+    line-height: 1.125em;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
+    border-radius: 4px;
+    background-color: #222;
+
+    padding: 0.438em 0.625em;
+    margin: 5px 5px 6px;
+
+    cursor: pointer;
+}
+
+.menu-txt {
+    display: block;
+    line-height: 1.188em;
+    float: left;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 3px #000;
+}
+
+.menu-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 5%;
+}
+
+.slick-nav {
+    clear: both;
+    color: #fff;
+    margin: 0;
+    font-size: 0.875em;
+
+    ul {
+        list-style: none;
+    }
+}
+
+.slick-collapsed {
+    display: contents;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 2px 5px;
+}
+
+.slick-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 2px 5px;
+    cursor: pointer;
+
+    &:hover {
+        border-radius: 6px;
+        background-color: #ccc;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.slick-arrow {
+    margin-left: 8px;
+}
+
+.actives {
+    color: #fff;
+    padding: 5px 10px;
+    margin: 2px 5px;
+
+    &:hover {
+        border-radius: 6px;
+        background-color: #ccc;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.slick-hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 851px) {
+    .wrapper {
+        display: none;
+    }
+}

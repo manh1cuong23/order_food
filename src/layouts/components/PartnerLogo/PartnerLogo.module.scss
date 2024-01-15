@@ -1,0 +1,43 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #303030;
+    padding: 38px 0;
+}
+
+.container {
+    margin: 0 var(--margin-responsive);
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        height: 20px;
+        margin-right: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        // width: 600px;
+        overflow-x: scroll;
+        // overflow: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        height: 0px;
+    }
+
+    .logo {
+        width: 85px;
+        margin-right: 24px;
+    }
+}

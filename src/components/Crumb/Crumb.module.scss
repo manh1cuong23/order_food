@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    // width: 100%;
+    // margin: 0 190px;
+}
+
+.crumb {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.icon {
+}
+
+.home {
+    display: inline-block;
+    font-size: 16px;
+    color: #252525 !important;
+    position: relative;
+}
+
+.page,
+.text {
+    color: #b2b2b2;
+}

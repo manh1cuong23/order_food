@@ -1,0 +1,324 @@
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: calc(100% - (var(--margin-responsive) * 2));
+    margin: 0 var(--margin-responsive);
+    padding-top: 20px;
+
+    &-general {
+        display: flex;
+        padding-bottom: 30px;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    &-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 20px 60px 10px rgba(23, 28, 40, 0.2);
+        overflow: hidden;
+        padding-bottom: 16px;
+    }
+
+    &-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 30px 20px 20px;
+        background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%),
+            url(../../assets/imgs/profile-bg.png) no-repeat center;
+        color: #fff;
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+
+        &__avatar {
+            width: 121px;
+            height: 121px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            background: #ccc content-box;
+        }
+
+        &__name {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 144.444%;
+        }
+
+        &__desc {
+            margin-top: 2px;
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 146.667%;
+        }
+    }
+
+    &-menu {
+        padding: 0 30px;
+
+        &__title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+
+        &__list {
+            margin-top: 11px;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 30px;
+            padding: 0 4px;
+            border-radius: 5px;
+
+            font-size: 1rem;
+            line-height: 146.667%;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background: var(--profile-sidebar-link-hover);
+            }
+        }
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 100%;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 16px;
+    }
+}
+
+// Wallet
+
+.wallet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.wallet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wallet-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 141.667%;
+}
+
+.wallet-desc {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.667%;
+    margin-bottom: 16px;
+}
+
+.payment-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.payment-card {
+    // width: 30%;
+}
+
+.payment-card__bg {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: var(--bg-color);
+    overflow: hidden;
+    user-select: none;
+}
+
+.payment-card__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.payment-card__top {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.payment-card__type {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 142.857%;
+}
+
+.payment-card__number {
+    margin-top: 37px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 144.444%;
+}
+
+.payment-card__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.payment-card__label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 175%;
+}
+
+.payment-card__value {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.payment-card__expired {
+    margin: 0 70px 0 40px;
+}
+
+.payment-card__circle {
+    --circle-width: 28px;
+    position: relative;
+    width: 42px;
+    height: var(--circle-width);
+}
+
+.payment-card__circle::before,
+.payment-card__circle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: var(--circle-width);
+    height: var(--circle-width);
+    border-radius: 50%;
+}
+
+.payment-card__circle::before {
+    left: 0;
+    z-index: 1;
+    background: #f94545;
+    mix-blend-mode: hard-light;
+}
+
+.payment-card__circle::after {
+    right: 0;
+    background: #ffb700;
+}
+
+.add-card {
+    border-radius: 10px;
+    border: 1px dashed #d2d1d6;
+    padding: 20px;
+}
+
+.new-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-card__icon {
+}
+
+.new-card__text {
+    font-size: 0.9rem;
+}
+
+// Info
+
+.info {
+}
+
+.cart-info__heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 141.667%;
+}
+
+.cart-info__desc {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.667%;
+    margin-bottom: 16px;
+}
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-detail {
+    display: flex;
+    width: 390px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #f6f6f6;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--account-info-bg);
+}
+
+.account-info__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.account-info__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 146.667%;
+}
+
+.account-info__desc {
+    margin-top: 6px;
+    font-size: 1rem;
+    line-height: 142.857%;
+}

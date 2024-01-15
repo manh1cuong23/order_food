@@ -1,0 +1,48 @@
+.product-favourite {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    padding-bottom: 30px;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            p {
+                color: #566363;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    &__price {
+        font-weight: 700;
+    }
+
+    &__button {
+        border: 1px solid #e7ab3c;
+        color: black;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: #e7ab3c;
+            color: white;
+            transition: all 0.2s ease-in;
+        }
+    }
+}
+
+.heart {
+    cursor: pointer;
+}

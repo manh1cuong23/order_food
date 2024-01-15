@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "The Personality Trait That Makes People Happier",
+        "content_main": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "content_extra": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "quote": "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.",
+        "author": "Steven Jobs",
+        "tags": [{ "tag": "TRAVEL" }, { "tag": "BEAUTY" }, { "tag": "FASHION" }],
+        "date": "May 19, 2023",
+        "img": "imgs/blog-detail.jpg",
+        "imgs": [
+            { "img_extra": "imgs/blog-detail-1.jpg" },
+            { "img_extra": "imgs/blog-detail-2.jpg" },
+            { "img_extra": "imgs/blog-detail-3.jpg" }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "The Personality Trait That Makes People Happier",
+        "content_main": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "content_extra": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "quote": "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.",
+        "author": "Steven Jobs",
+        "tags": [{ "tag": "TRAVEL" }, { "tag": "BEAUTY" }, { "tag": "FASHION" }],
+        "date": "May 19, 2023",
+        "img": "imgs/blog-detail.jpg",
+        "imgs": [
+            { "img_extra": "imgs/blog-detail-1.jpg" },
+            { "img_extra": "imgs/blog-detail-2.jpg" },
+            { "img_extra": "imgs/blog-detail-3.jpg" }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "The Personality Trait That Makes People Happier",
+        "content_main": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "content_extra": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "quote": "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.",
+        "author": "Steven Jobs",
+        "tags": [{ "tag": "TRAVEL" }, { "tag": "BEAUTY" }, { "tag": "FASHION" }],
+        "date": "May 19, 2023",
+        "img": "imgs/blog-detail.jpg",
+        "imgs": [
+            { "img_extra": "imgs/blog-detail-1.jpg" },
+            { "img_extra": "imgs/blog-detail-2.jpg" },
+            { "img_extra": "imgs/blog-detail-3.jpg" }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "The Personality Trait That Makes People Happier",
+        "content_main": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "content_extra": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "quote": "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.",
+        "author": "Steven Jobs",
+        "tags": [{ "tag": "TRAVEL" }, { "tag": "BEAUTY" }, { "tag": "FASHION" }],
+        "date": "May 19, 2023",
+        "img": "imgs/blog-detail.jpg",
+        "imgs": [
+            { "img_extra": "imgs/blog-detail-1.jpg" },
+            { "img_extra": "imgs/blog-detail-2.jpg" },
+            { "img_extra": "imgs/blog-detail-3.jpg" }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "The Personality Trait That Makes People Happier",
+        "content_main": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "content_extra": "Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        "quote": "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.",
+        "author": "Steven Jobs",
+        "tags": [{ "tag": "TRAVEL" }, { "tag": "BEAUTY" }, { "tag": "FASHION" }],
+        "date": "May 19, 2023",
+        "img": "imgs/blog-detail.jpg",
+        "imgs": [
+            { "img_extra": "imgs/blog-detail-1.jpg" },
+            { "img_extra": "imgs/blog-detail-2.jpg" },
+            { "img_extra": "imgs/blog-detail-3.jpg" }
+        ]
+    }
+]

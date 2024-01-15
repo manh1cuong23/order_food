@@ -1,0 +1,50 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 7rem 0;
+
+    .btn-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 2rem;
+        color: var(--black);
+        background: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--primary);
+        }
+    }
+
+    .btn-icon.dis {
+        opacity: 0.5;
+
+        &:hover {
+            color: var(--black);
+        }
+    }
+
+    .button {
+        width: 3rem;
+        text-align: center;
+        color: #a8a8a8;
+        padding: 4px;
+        border: 1px solid black;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--black);
+        }
+    }
+
+    .button.active {
+        color: var(--black);
+        padding: 4px;
+    }
+}

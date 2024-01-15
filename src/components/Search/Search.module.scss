@@ -1,0 +1,143 @@
+.wrapper {
+    max-width: 58.333333%;
+}
+
+.search-result {
+    width: 630px;
+    max-height: 350px;
+    overflow-y: scroll;
+    background-color: #e7e7e7;
+    border-radius: 4px;
+}
+
+// .search-outcome {
+//     background-color: #e7e7e7;
+//     border-radius: 4px;
+// }
+
+.title {
+    // display: block;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #252525;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    position: relative;
+}
+
+.advanced-search {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    width: 625px;
+}
+
+.category-btn {
+    display: flex;
+    align-items: center;
+    max-width: 45%;
+    width: 42%;
+    height: 100%;
+    float: left;
+    background: transparent;
+    border: none;
+    padding-left: 23px;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    color: #252525;
+    position: relative;
+
+    span {
+        padding-right: 35px;
+        cursor: pointer;
+    }
+
+    &::before {
+        position: absolute;
+        right: 0;
+        top: 14px;
+        width: 1px;
+        height: 20px;
+        background: #e5e5e5;
+        content: '';
+    }
+}
+
+.input-group {
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+
+    input {
+        border: none;
+        outline: none;
+        height: 100%;
+        width: 85%;
+        font-size: 15px;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 15%;
+        border: none;
+        background-color: var(--primary);
+        cursor: pointer;
+
+        .btn-search {
+            font-size: 18px;
+        }
+    }
+}
+
+.search-icon--small {
+    display: none;
+}
+
+@media screen and (max-width: 1356px) and (min-width: 1151px) {
+    .advanced-search {
+        width: 450px;
+    }
+
+    .search-icon--small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 801px) {
+    .advanced-search {
+        width: 400px;
+    }
+    .search-icon--small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .advanced-search {
+        display: none;
+    }
+
+    .search-icon--small {
+        display: block;
+        font-size: 25px;
+    }
+}
