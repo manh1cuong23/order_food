@@ -15,6 +15,7 @@ const routes = {
     profile: '/profile',
     collection: '/collection',
     favourite: '/favourite',
+    ForgetPass: '/ForgetPass'
 };
 
 export default routes;

@@ -24,7 +24,7 @@ function Header() {
                     <div className={cx('header-left')}>
                         <div className={cx('email')}>
                             <FontAwesomeIcon className={cx('icon')} icon={faEnvelope} />
-                            <span className={cx('mail-address')}>hello.colorlib@gmail.com</span>
+                            <span className={cx('mail-address')}>ndt13102003@gmail.com</span>
                         </div>
                         <div className={cx('phone')}>
                             <BsFillTelephoneFill className={cx('icon')} />
@@ -53,9 +53,7 @@ function Header() {
                         <div className={cx('social-icon')}>
                             <IoShareSocialOutline />
                         </div>
-                        <div className={cx('language')}>
-                            <span>English</span>
-                        </div>
+                       
                         <div className={cx('login')}>
                             <FaUser />
                             <span>

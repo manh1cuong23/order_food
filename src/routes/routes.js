@@ -14,7 +14,7 @@ import FAQ from '~/pages/FAQ/FAQ';
 import Profile from '~/pages/Profile/Profile';
 import Collection from '~/pages/Collection/Collection';
 import Favourite from '~/pages/Favourite/Favourite';
-
+import ForgetPass from '~/pages/ForgetPass/ForgetPass';
 const publicRoutes = [
     { path: config.routes.home, component: Home },
     { path: config.routes.shop, component: Shop },
@@ -32,6 +32,8 @@ const publicRoutes = [
     { path: config.routes.profile, component: Profile },
     { path: config.routes.collection, component: Collection },
     { path: config.routes.favourite, component: Favourite },
+    { path: config.routes.ForgetPass, component: ForgetPass },
+
 ];
 
 const privateRoutes = [];

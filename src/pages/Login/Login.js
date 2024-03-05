@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import qs from 'qs';
-
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import classNames from 'classnames/bind';
 import style from './Login.module.scss';
 
 import Crumb from '../../components/Crumb/Crumb';
 
+import { HttpPost } from '../API/useAuth/auth.api';
 const cx = classNames.bind(style);
 
 function Login() {
@@ -19,49 +21,16 @@ function Login() {
         watch,
         formState: { errors },
     } = useForm();
-
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const callApi = async (data) => {
-        const response = await axios({
-            method: 'get',
-            url: 'https://6556cd15bd4bcef8b611a0fc.mockapi.io/api/clothes/users',
-            data: qs.stringify({
-                Email: data.email,
-                PassWord: data.passWord,
-            }),
-            headers: {
-                'content-type': 'application/x-www-form-urlencoded;charset=utf-8',
-            },
-        });
-
-        const account = response.data.find((d) => d.email === data.Email);
-        const passAcc = account.passWord === parseInt(data.Password);
-
-        if (account && passAcc) {
-            console.log('Login success!!!');
-        } else {
-            console.log('Email or PassWord incorrect!!!');
-        }
-
-        return response;
-    };
-
     const handleLogin = async (data) => {
         try {
-            const datas = await callApi(data);
-
-            if (datas.data.Error === true) {
-                console.log(`${datas.data.Title}`);
-            }
-            if (datas?.data?.Error === false) {
-                console.log('Login success!');
-                localStorage.setItem('Fashion', JSON.stringify(datas.data));
+            const res = await HttpPost('/auth/sign-in', data);
+            if(res.data.statuscode === 200) {
+                toast.success(res.data.message)
+            } else {
+                toast.error(res.data.message)
             }
         } catch (error) {
-            console.log(`${error.message}`);
-            console.log('ERROR');
+           toast(error.message)
         }
     };
 
@@ -71,27 +40,27 @@ function Login() {
             <form className={cx('form')} autoComplete="off" onSubmit={handleSubmit(handleLogin)}>
                 <h2 className={cx('form-title')}>Login</h2>
                 <div className={cx('form-group')}>
-                    <label htmlFor="email" className={cx('form-label')}>
+                    <label htmlFor="username" className={cx('form-label')}>
                         Email address *
                     </label>
                     <input
                         type="text"
                         className={cx('form-control')}
-                        id="Email"
+                        id="username"
                         // value={email}
-                        placeholder="Example: viet02092001@gmail.com"
+                        placeholder="Example:abc@gmail.com"
                         autoComplete="new-password"
-                        {...register('Email', {
+                        {...register('username', {
                             required: true,
                             pattern: {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                             },
                         })}
                     />
-                    {errors.Email && errors.Email.type === 'required' && (
+                    {errors.username && errors.username.type === 'required' && (
                         <span className={cx('error-message')}>Email cannot be empty !</span>
                     )}
-                    {errors.Email && errors.Email.type === 'pattern' && (
+                    {errors.username && errors.username.type === 'pattern' && (
                         <span className={cx('error-message')}>Invalid email !</span>
                     )}
                 </div>
@@ -102,17 +71,17 @@ function Login() {
                     <input
                         type="password"
                         className={cx('form-control')}
-                        id="PassWord"
+                        id="password"
                         // value={password}
                         placeholder="Enter password"
                         autoComplete="off"
-                        {...register('Password', {
+                        {...register('password', {
                             required: true,
                             minLength: 6,
                             maxLength: 30,
                         })}
                     />
-                    {errors.Password && errors.Password.type === 'required' && (
+                    {errors.password && errors.password.type === 'required' && (
                         <span className={cx('error-message')}>Password cannot be empty !</span>
                     )}
                 </div>
@@ -124,7 +93,7 @@ function Login() {
                             <input type="checkbox" id="save-pass" />
                             <span className={cx('checkmark')}></span>
                         </label>
-                        <a href="#!" className={cx('forget-pass')}>
+                        <a href="/ForgetPass" className={cx('forget-pass')}>
                             Forget your Password
                         </a>
                     </div>

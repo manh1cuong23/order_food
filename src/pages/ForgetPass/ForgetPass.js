@@ -6,13 +6,13 @@ import qs from 'qs';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import classNames from 'classnames/bind';
-import style from './Register.module.scss';
+import style from './ForgetPass.module.scss';
 import { HttpPost } from '../API/useAuth/auth.api';
 import Crumb from '~/components/Crumb/Crumb';
 
 const cx = classNames.bind(style);
 
-function Register() {
+function ForgetPass() {
     const {
         register,
         handleSubmit,
@@ -22,8 +22,8 @@ function Register() {
 
    
 
-    const handleSignUp = async (data) => {
-        const res = await HttpPost('/auth/sign-up', data)
+    const handleReset = async (data) => {
+        const res = await HttpPost('/auth/reset-password', data)
         if(res) {
             if(res.data.statuscode === 200) {
                 toast.success(res.data.message, {
@@ -39,8 +39,8 @@ function Register() {
     return (
         <div className={cx('wrapper')}>
             <Crumb title="Register" />
-            <form className={cx('form')} onSubmit={handleSubmit(handleSignUp)}>
-                <h2 className={cx('form-title')}>Register</h2>
+            <form className={cx('form')} onSubmit={handleSubmit(handleReset)}>
+                <h2 className={cx('form-title')}>Reset Password</h2>
                 <div className={cx('form-group')}>
                     <label htmlFor="username" className={cx('form-label')}>
                         Email address *
@@ -64,32 +64,32 @@ function Register() {
                     )}
                 </div>
                 <div className={cx('form-group')}>
-                    <label htmlFor="password" className={cx('form-label')}>
-                        Password *
+                    <label htmlFor="newPassword" className={cx('form-label')}>
+                        Reset Password *
                     </label>
                     <input
                         type="password"
                         className={cx('form-control')}
-                        placeholder="Entered password"
+                        placeholder="Entered reset password"
                         autoComplete="on"
-                        {...register('password', {
+                        {...register('newPassword', {
                             required: true,
                             minLength: 6,
                             maxLength: 30,
                         })}
                     />
-                    {errors.password && errors.password.type === 'required' && (
+                    {errors.newPassword && errors.newPassword.type === 'required' && (
                         <span className={cx('error-message')}>Password cannot be empty !</span>
                     )}
-                    {errors.password && errors.password.type === 'minLength' && (
+                    {errors.newPassword && errors.newPassword.type === 'minLength' && (
                         <span className={cx('error-message')}>Weak password</span>
                     )}
-                    {errors.password && errors.password.type === 'maxLength' && (
+                    {errors.newPassword && errors.newPassword.type === 'maxLength' && (
                         <span className={cx('error-message')}>Password up to 30 characters</span>
                     )}
                 </div>
                 <div className={cx('form-group')}>
-                    <label htmlFor="passwordAgain" className={cx('form-label')}>
+                    <label htmlFor="confirnPass" className={cx('form-label')}>
                         Confirm Password *
                     </label>
                     <input
@@ -97,24 +97,24 @@ function Register() {
                         className={cx('form-control')}
                         placeholder="Re-entered password"
                         autoComplete="on"
-                        {...register('passwordAgain', {
+                        {...register('confirnPass', {
                             required: true,
                             validate: (val) => {
-                                if (watch('password') !== val) {
+                                if (watch('newPassword') !== val) {
                                     return 'Your passwords does not match!';
                                 }
                             },
                         })}
                     />
-                    {errors.passwordAgain && errors.passwordAgain.type === 'required' && (
+                    {errors.confirnPass && errors.confirnPass.type === 'required' && (
                         <span className={cx('error-message')}>Password again can not be empty !</span>
                     )}
-                    {errors.passwordAgain && errors.passwordAgain.type === 'validate' && (
+                    {errors.confirnPass && errors.confirnPass.type === 'validate' && (
                         <span className={cx('error-message')}>Confirm password does not match !</span>
                     )}
                 </div>
 
-                <button className={cx('submit')}>REGISTER</button>
+                <button className={cx('submit')}>RESET PASSWORD</button>
 
                 <div className={cx('switch')}>
                     <Link to="/login" className={cx('switch-login')}>
@@ -126,4 +126,4 @@ function Register() {
     );
 }
 
-export default Register;
+export default ForgetPass;

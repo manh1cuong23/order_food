@@ -3,7 +3,8 @@ import DefaultLayout from './layouts/DefaultLayout/DefaultLayout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes/routes';
 import { Fragment, useEffect } from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import React, { useState } from 'react';
 import LoadingSpinner from './layouts/components/LoadingSpinner/LoadingSpinner';
 import ScrollToTop from './hooks/scrollToTop';
@@ -21,6 +22,7 @@ function App() {
 
     return (
         <Router>
+            <ToastContainer autoClose={4000}  position="bottom-right" />
             <div className="App">
                 <ScrollToTop />
                 {/* {isLoading ? (
